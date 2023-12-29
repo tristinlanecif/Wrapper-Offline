@@ -145,7 +145,6 @@ module.exports = function processVoice(voiceName, rawText) {
 					}).on("error", rej);
 					break;
 				}
-
 				case "vocalware": {
 					const [EID, LID, VID] = voice.arg;
 					const q = new URLSearchParams({
@@ -185,7 +184,6 @@ module.exports = function processVoice(voiceName, rawText) {
 						.on("error", rej);
 					break;
 				}
-
 				case "acapela": {
 					let acapelaArray = [];
 					for (let c = 0; c < 15; c++) acapelaArray.push(~~(65 + Math.random() * 26));
